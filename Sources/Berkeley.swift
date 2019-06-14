@@ -11,12 +11,14 @@
 import Network
 import NIO
 
-public class Berkeley {
+open class Berkeley {
     private let group = MultiThreadedEventLoopGroup(numberOfThreads: 1)
     private var channel: Channel?
     private lazy var clientHandler: ClientIOHandler = {
         return ClientIOHandler(read)
     }()
+
+    public init() { }
 
     public func start(host: String, port: Int, result: @escaping (Result<Void, Error>) -> Void) {
         DispatchQueue.global(qos: .utility).async { [weak self] in
@@ -46,7 +48,7 @@ public class Berkeley {
         print("Client connection closed")
     }
 
-    public func read(data: [UInt8]) {
+    open func read(data: [UInt8]) {
         // OVERRIDE ME
     }
 
