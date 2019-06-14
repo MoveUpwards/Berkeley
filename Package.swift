@@ -10,11 +10,14 @@ let package = Package(
             targets: ["Berkeley"]
         ),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/apple/swift-nio.git", from: "2.0.0"),
+        .package(url: "https://github.com/apple/swift-nio-transport-services.git", from: "2.0.0"),
+    ],
     targets: [
         .target(
             name: "Berkeley",
-            dependencies: [],
+            dependencies: ["SwiftNIO", "SwiftNIOTransportServices"],
             path: "Sources"
         ),
         .testTarget(
