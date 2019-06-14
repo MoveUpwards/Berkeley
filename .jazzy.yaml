@@ -1,0 +1,7 @@
+# Berkeley document generator jazzy settings
+
+copyright: Copyright 2019 Move Upwards
+author: Move Upwards
+xcodebuild_arguments: [-target, Berkeley-iOS]
+clean: true
+output: ./Documentation
