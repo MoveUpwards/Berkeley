@@ -43,9 +43,9 @@ open class Berkeley {
         do {
             try group.syncShutdownGracefully()
         } catch let error {
-            print("Error shutting down \(error.localizedDescription)")
+            print("[Berkeley] Error shutting down \(error.localizedDescription)")
         }
-        print("Client connection closed")
+        print("[Berkeley] Client connection closed")
     }
 
     open func read(data: [UInt8]) {
@@ -59,7 +59,12 @@ open class Berkeley {
             }
 
             buffer.writeBytes(Data(data))
-            try? self?.channel?.writeAndFlush(buffer).wait()
+            do {
+                try self?.channel?.writeAndFlush(buffer).wait()
+            } catch let error {
+                self?.stop()
+                print("[Berkeley] Error write bytes \(error.localizedDescription)")
+            }
         }
     }
 
