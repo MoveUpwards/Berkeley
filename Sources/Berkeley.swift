@@ -18,11 +18,9 @@ open class Berkeley {
         return ClientIOHandler(read)
     }()
 
-    open var timeout = TimeAmount.seconds(10)
-
     public init() { }
 
-    public func start(host: String, port: Int, result: @escaping (Result<Void, Error>) -> Void) {
+    public func start(host: String, port: Int, timeout: Int64 = 10, result: @escaping (Result<Void, Error>) -> Void) {
         DispatchQueue.global(qos: .utility).async { [weak self] in
             do {
                 guard let strongSelf = self else {
@@ -30,7 +28,7 @@ open class Berkeley {
                 }
 
                 strongSelf.channel = try strongSelf.bootstrap
-                    .connectTimeout(strongSelf.timeout)
+                    .connectTimeout(TimeAmount.seconds(timeout))
                     .connect(host: host, port: port).wait()
 
                 DispatchQueue.main.async {
