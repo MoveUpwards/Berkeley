@@ -18,6 +18,8 @@ open class Berkeley {
         return ClientIOHandler(read)
     }()
 
+    open var timeout = TimeAmount.seconds(10)
+
     public init() { }
 
     public func start(host: String, port: Int, result: @escaping (Result<Void, Error>) -> Void) {
@@ -27,7 +29,10 @@ open class Berkeley {
                     return
                 }
 
-                strongSelf.channel = try strongSelf.bootstrap.connect(host: host, port: port).wait()
+                strongSelf.channel = try strongSelf.bootstrap
+                    .connectTimeout(strongSelf.timeout)
+                    .connect(host: host, port: port).wait()
+
                 DispatchQueue.main.async {
                     result(.success(())) // If after the closeFutur, it won't be call sadly.
                 }
