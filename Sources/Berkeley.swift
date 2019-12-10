@@ -43,12 +43,14 @@ open class Berkeley {
     }
 
     public func stop() {
-        do {
-            try group.syncShutdownGracefully()
-        } catch let error {
-            print("[Berkeley] Error shutting down \(error.localizedDescription)")
+        DispatchQueue.global(qos: .utility).async { [weak self] in
+            do {
+                try self?.group.syncShutdownGracefully()
+            } catch let error {
+                print("[Berkeley] Error shutting down \(error.localizedDescription)")
+            }
+            print("[Berkeley] Client connection closed")
         }
-        print("[Berkeley] Client connection closed")
     }
 
     open func read(data: [UInt8]) {
