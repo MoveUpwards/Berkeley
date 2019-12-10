@@ -43,12 +43,11 @@ open class Berkeley {
     }
 
     public func stop() {
-        DispatchQueue.global(qos: .utility).async { [weak self] in
-            do {
-                try self?.group.syncShutdownGracefully()
-            } catch let error {
+        group.shutdownGracefully(queue: DispatchQueue.global(qos: .utility)) { error in
+            if let error = error {
                 print("[Berkeley] Error shutting down \(error.localizedDescription)")
             }
+
             print("[Berkeley] Client connection closed")
         }
     }
