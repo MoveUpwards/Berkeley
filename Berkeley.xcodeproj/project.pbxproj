@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		121EC1B368EFA8EB075B3D28 /* Pods_Berkeley.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96104766B1AC05A3341E9AC /* Pods_Berkeley.framework */; };
 		3D9C42A222745900000A6585 /* Berkeley.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* Berkeley.swift */; };
 		3D9C43242274629B000A6585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43232274629B000A6585 /* AppDelegate.swift */; };
 		3D9C43262274629B000A6585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43252274629B000A6585 /* ViewController.swift */; };
@@ -15,8 +14,8 @@
 		3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432C2274629C000A6585 /* LaunchScreen.storyboard */; };
 		3D9C433422746323000A6585 /* Berkeley.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* Berkeley.framework */; };
 		3D9C433522746323000A6585 /* Berkeley.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* Berkeley.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		73F63F70F9F2E7C5C6B80B39 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664F1B98AF9140435F0263F9 /* Pods_Example.framework */; };
-		C2E0D7251AD193A2206670E7 /* Pods_BerkeleyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DE995863D92B6F7FA041D2 /* Pods_BerkeleyTests.framework */; };
+		85DB18B726134F9200880254 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 85DB18B626134F9200880254 /* NIO */; };
+		85DB18BC26134FAC00880254 /* NIOTransportServices in Frameworks */ = {isa = PBXBuildFile; productRef = 85DB18BB26134FAC00880254 /* NIOTransportServices */; };
 		F30DD6C922B397E400F1629D /* ClientIOHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30DD6C822B397E400F1629D /* ClientIOHandler.swift */; };
 		F3D7C3B422B394C90091B829 /* BerkeleyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D7C3B322B394C90091B829 /* BerkeleyTests.swift */; };
 		F3D7C3B622B394C90091B829 /* Berkeley.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* Berkeley.framework */; };
@@ -54,7 +53,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2C11C2CFF76C5030B5F0E32E /* Pods-BerkeleyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BerkeleyTests.release.xcconfig"; path = "Target Support Files/Pods-BerkeleyTests/Pods-BerkeleyTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D9C429022745894000A6585 /* Berkeley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Berkeley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C429C227458E8000A6585 /* Berkeley.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Berkeley.plist; sourceTree = "<group>"; };
 		3D9C429D227458E8000A6585 /* BerkeleyTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BerkeleyTests.plist; sourceTree = "<group>"; };
@@ -76,14 +74,6 @@
 		3D9C432D2274629C000A6585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9C432F2274629C000A6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DB91AC4229AC263002668DA /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
-		664F1B98AF9140435F0263F9 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80DE995863D92B6F7FA041D2 /* Pods_BerkeleyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BerkeleyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		852FECA614C5B86481CE9923 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BB2B91423EEC8FC908D5CBB1 /* Pods-BerkeleyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BerkeleyTests.debug.xcconfig"; path = "Target Support Files/Pods-BerkeleyTests/Pods-BerkeleyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BC030BF088DDF02777A48E89 /* Pods-Berkeley.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Berkeley.release.xcconfig"; path = "Target Support Files/Pods-Berkeley/Pods-Berkeley.release.xcconfig"; sourceTree = "<group>"; };
-		D96104766B1AC05A3341E9AC /* Pods_Berkeley.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Berkeley.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DAC3F0B89910F179FC981C51 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		E7A11F4653C98ED84141B030 /* Pods-Berkeley.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Berkeley.debug.xcconfig"; path = "Target Support Files/Pods-Berkeley/Pods-Berkeley.debug.xcconfig"; sourceTree = "<group>"; };
 		F30DD6C822B397E400F1629D /* ClientIOHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientIOHandler.swift; sourceTree = "<group>"; };
 		F3D7C3B122B394C80091B829 /* BerkeleyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BerkeleyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D7C3B322B394C90091B829 /* BerkeleyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerkeleyTests.swift; sourceTree = "<group>"; };
@@ -95,7 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				121EC1B368EFA8EB075B3D28 /* Pods_Berkeley.framework in Frameworks */,
+				85DB18B726134F9200880254 /* NIO in Frameworks */,
+				85DB18BC26134FAC00880254 /* NIOTransportServices in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +95,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9C433422746323000A6585 /* Berkeley.framework in Frameworks */,
-				73F63F70F9F2E7C5C6B80B39 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,23 +103,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D7C3B622B394C90091B829 /* Berkeley.framework in Frameworks */,
-				C2E0D7251AD193A2206670E7 /* Pods_BerkeleyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05EDFD68AAF4B140CF96E3B4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D96104766B1AC05A3341E9AC /* Pods_Berkeley.framework */,
-				80DE995863D92B6F7FA041D2 /* Pods_BerkeleyTests.framework */,
-				664F1B98AF9140435F0263F9 /* Pods_Example.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		3D9C428622745894000A6585 = {
 			isa = PBXGroup;
 			children = (
@@ -138,8 +117,6 @@
 				3D9C429B227458E8000A6585 /* Configs */,
 				F3D7C3B222B394C90091B829 /* BerkeleyTests */,
 				3D9C429122745894000A6585 /* Products */,
-				7FCF56A98819C291A6BC22F7 /* Pods */,
-				05EDFD68AAF4B140CF96E3B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -201,19 +178,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		7FCF56A98819C291A6BC22F7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E7A11F4653C98ED84141B030 /* Pods-Berkeley.debug.xcconfig */,
-				BC030BF088DDF02777A48E89 /* Pods-Berkeley.release.xcconfig */,
-				BB2B91423EEC8FC908D5CBB1 /* Pods-BerkeleyTests.debug.xcconfig */,
-				2C11C2CFF76C5030B5F0E32E /* Pods-BerkeleyTests.release.xcconfig */,
-				852FECA614C5B86481CE9923 /* Pods-Example.debug.xcconfig */,
-				DAC3F0B89910F179FC981C51 /* Pods-Example.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		F3D7C3B222B394C90091B829 /* BerkeleyTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,7 +205,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D9C429822745894000A6585 /* Build configuration list for PBXNativeTarget "Berkeley" */;
 			buildPhases = (
-				219735F16909BF237F31898D /* [CP] Check Pods Manifest.lock */,
 				3D9C428B22745894000A6585 /* Headers */,
 				3D9C428C22745894000A6585 /* Sources */,
 				3D9C428D22745894000A6585 /* Frameworks */,
@@ -253,6 +216,10 @@
 			dependencies = (
 			);
 			name = Berkeley;
+			packageProductDependencies = (
+				85DB18B626134F9200880254 /* NIO */,
+				85DB18BB26134FAC00880254 /* NIOTransportServices */,
+			);
 			productName = Berkeley;
 			productReference = 3D9C429022745894000A6585 /* Berkeley.framework */;
 			productType = "com.apple.product-type.framework";
@@ -261,12 +228,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D9C43302274629C000A6585 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
-				D57AFD8D52A18811AB04B19D /* [CP] Check Pods Manifest.lock */,
 				3D9C431D2274629B000A6585 /* Sources */,
 				3D9C431E2274629B000A6585 /* Frameworks */,
 				3D9C431F2274629B000A6585 /* Resources */,
 				3D9C433822746323000A6585 /* Embed Frameworks */,
-				29B3B119B27D84B86BE90398 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,11 +247,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3D7C3BB22B394C90091B829 /* Build configuration list for PBXNativeTarget "BerkeleyTests" */;
 			buildPhases = (
-				C75193D939D5D899320510D5 /* [CP] Check Pods Manifest.lock */,
 				F3D7C3AD22B394C80091B829 /* Sources */,
 				F3D7C3AE22B394C80091B829 /* Frameworks */,
 				F3D7C3AF22B394C80091B829 /* Resources */,
-				E1753F2D06754297D47151A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -329,6 +292,10 @@
 				Base,
 			);
 			mainGroup = 3D9C428622745894000A6585;
+			packageReferences = (
+				85DB18B526134F9200880254 /* XCRemoteSwiftPackageReference "swift-nio" */,
+				85DB18BA26134FAC00880254 /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */,
+			);
 			productRefGroup = 3D9C429122745894000A6585 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -367,45 +334,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		219735F16909BF237F31898D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Berkeley-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		29B3B119B27D84B86BE90398 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3D9C42CE22745AEA000A6585 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,67 +351,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		C75193D939D5D899320510D5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BerkeleyTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D57AFD8D52A18811AB04B19D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E1753F2D06754297D47151A9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BerkeleyTests/Pods-BerkeleyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BerkeleyTests/Pods-BerkeleyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BerkeleyTests/Pods-BerkeleyTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -669,7 +536,6 @@
 		};
 		3D9C429922745894000A6585 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7A11F4653C98ED84141B030 /* Pods-Berkeley.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -701,7 +567,6 @@
 		};
 		3D9C429A22745894000A6585 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC030BF088DDF02777A48E89 /* Pods-Berkeley.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -732,7 +597,6 @@
 		};
 		3D9C43312274629C000A6585 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 852FECA614C5B86481CE9923 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -754,7 +618,6 @@
 		};
 		3D9C43322274629C000A6585 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAC3F0B89910F179FC981C51 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -776,7 +639,6 @@
 		};
 		F3D7C3B922B394C90091B829 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB2B91423EEC8FC908D5CBB1 /* Pods-BerkeleyTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6S4Z2KMUS;
@@ -796,7 +658,6 @@
 		};
 		F3D7C3BA22B394C90091B829 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C11C2CFF76C5030B5F0E32E /* Pods-BerkeleyTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W6S4Z2KMUS;
@@ -854,6 +715,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		85DB18B526134F9200880254 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.27.0;
+			};
+		};
+		85DB18BA26134FAC00880254 /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio-transport-services";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		85DB18B626134F9200880254 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85DB18B526134F9200880254 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		85DB18BB26134FAC00880254 /* NIOTransportServices */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85DB18BA26134FAC00880254 /* XCRemoteSwiftPackageReference "swift-nio-transport-services" */;
+			productName = NIOTransportServices;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D9C428722745894000A6585 /* Project object */;
 }
