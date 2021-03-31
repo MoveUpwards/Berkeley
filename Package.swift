@@ -6,6 +6,7 @@ let package = Package(
     name: "Berkeley",
     platforms: [
         .iOS(.v9),
+        .macOS(.v10_13)
     ],
     products: [
         .library(
@@ -14,13 +15,12 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-nio.git", from: "2.0.0"),
-        .package(url: "https://github.com/apple/swift-nio-transport-services.git", from: "1.0.0"),
+        .package(name: "swift-nio-transport-services", url: "https://github.com/apple/swift-nio-transport-services", from: "1.9.2"),
     ],
     targets: [
         .target(
             name: "Berkeley",
-            dependencies: ["NIO"],
+            dependencies: [.product(name: "NIOTransportServices", package: "swift-nio-transport-services")],
             path: "Sources"
         ),
     ]
